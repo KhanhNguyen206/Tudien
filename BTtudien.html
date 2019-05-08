@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tudien</title>
+</head>
+<body>
+<input type="text" id="input">
+<input type="button" onclick="dich()" value="dịch">
+<script>
+    function dich() {
+        let ta = ['up', 'down', 'cat', 'dog', 'table', 'chair'];
+        let tv = ['len', 'xuong', 'meo', 'cho', 'ban', 'ghe'];
+        let i=0;
+        let x= document.getElementById("input").value;
+        for(i=0; i<= ta.length; i++){
+            if(x == ta[i]){
+                document.write("Từ bạn nhập có nghĩa là:" + tv[i])
+            }
+        }
+    }
+</script>
+</body>
+</html>
